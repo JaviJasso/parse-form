@@ -1,0 +1,17 @@
+/*.adds {
+  display: flex;
+  flex-direction: column;
+}
+
+section.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form1 {
+  margin-bottom: 1em;
+}
+
+li {
+  list-style: none;
+}*/

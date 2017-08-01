@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+        <meta charset="utf-8">
+        <title>
+
+        </title>
+
+        <!-- <link rel="stylesheet" href="index-style.css"> -->
+
+      </head>
+
+      <body>
+        <p>Todo List!!!</p>
+        <form class="" action="/addTodo" method="post">
+          <input type="text" name="description" value="" placeholder="Add a todo">
+          <button type="submit">Add todo</button>
+        </form>
+
+        <ul>
+          {{#uncompleted}}
+            <li>
+              <form class="" action="/isComplete" method="post">
+
+                <button type="submit" name="id" value="{{id}}">Mark Complete</button>
+                {{description}}
+              </form>
+            </li>
+          {{/uncompleted}}
+        </ul>
+        <h1>Completed Tasks!</h1>
+        <ul>
+          {{#completed}}
+            <li>{{description}}</li>
+          {{/completed}}
+        </ul>
+      </body>
+  </html>
